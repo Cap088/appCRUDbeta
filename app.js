@@ -4,8 +4,8 @@ let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 //Funcion para mostrar lista
 
 function displayTasks(){
-  const taskLIst = document.getElementById('taskList');
-  taskLIst.innerHTML = '';
+  const taskList = document.getElementById('taskList');
+  taskList.innerHTML = '';
 
     tasks.forEach((task, index) => {
       const li = document.createElement('li');
@@ -27,7 +27,7 @@ function displayTasks(){
   li.appendChild(editButton);
   li.appendChild(deleteButton);
 
-  taskLIst.appendChild(li);
+  taskList.appendChild(li);
 
     });
 }
@@ -40,7 +40,7 @@ function addTask() {
   if (newTask) {
     tasks.push(newTask);
     taskInput.value = '';
-    localStorage.setItem('task', JSON.stringify(tasks));
+    localStorage.setItem('tasks', JSON.stringify(tasks));
     displayTasks();
   }
 }
@@ -61,7 +61,7 @@ function editTask(index) {
 function deleteTask(index) {
   if (confirm('¿En realidad deseas eliminar la rutina?')){
     tasks.splice(index, 1);
-    localStorage.setItem('task', JSON.stringify(task));
+    localStorage.setItem('tasks', JSON.stringify(tasks));
     displayTasks();
   }
 
@@ -69,4 +69,4 @@ function deleteTask(index) {
 
 //Visualizacion de rutinas
 
-/* displayTasks(); */
+displayTasks();

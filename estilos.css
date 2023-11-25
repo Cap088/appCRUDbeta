@@ -1,12 +1,88 @@
+/* Se empieza a codificar los estilos */
+body {
+    background-color: rgb(53, 112, 90);
+}
+/* Estilos del titulo principal */
+.titulo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 237, 237);
+}
 
-body{
-    background-color: rgb(138, 151, 146);
+/* Estilos del panel de agregar */
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.panel button {
+    color: rgb(41, 3, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(234, 234, 241);
+    width: 70px;
+    height: 28px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.panel input {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+}
+
+#task {
+    padding: 2px;
+    border: 3px solid rgb(110, 107, 107);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
 
 
-footer{
+}
+
+/* Estilos de la lista */
+.recuadro {
+    display: flex;
+    justify-content: center;
+    height:100%;
+
+}
+
+#taskList {
+    list-style: upper-roman;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border: 2px solid rgb(110, 107, 107);
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    inline-size: 300px;
+    background-color: rgb(115, 184, 119);
+
+
+}
+
+#taskList li p {
+    flex: 1;
+    text-align: left;
+}
+
+/* Estilos de los botones de la lista */
+li button{
+    cursor: pointer;
+   padding: 5px;
+   
+}
+
+/* Se agregan los estilos del footer */
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,16 +90,16 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    
+
 }
 
-.f1{
+.f1 {
     margin: 0px;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.f2{
+.f2 {
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
