@@ -1,26 +1,30 @@
 /* Se empieza a codificar los estilos */
 body {
-    background-color: rgb(53, 112, 90);
+    background-color: rgb(170, 39, 159);
 }
 /* Estilos del titulo principal */
-.titulo {
+header{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(245, 237, 237);
+    color: rgb(237, 237, 240);
+    background-color: rgb(231, 64, 64);;
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
 }
+
 
 /* Estilos del panel de agregar */
 .panel {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .panel button {
-    color: rgb(41, 3, 112);
+    color: rgb(234, 231, 238);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(234, 234, 241);
+    background-color: rgb(250, 8, 8);
     width: 70px;
     height: 28px;
     margin: 10px;
@@ -30,15 +34,17 @@ body {
 .panel input {
     font-family: Arial, Helvetica, sans-serif;
     height: 20px;
+    background-color: rgb(168, 239, 248);
 }
 
+/* estilos de rutinas */
 #task {
     padding: 2px;
     border: 3px solid rgb(110, 107, 107);
     font-family: Arial, Helvetica, sans-serif;
     width: 300px;
-
-
+    border: 1px solid rgb(27, 23, 23);
+    border-radius: 5px;
 }
 
 /* Estilos de la lista */
@@ -50,21 +56,25 @@ body {
 }
 
 #taskList {
-    list-style: upper-roman;
-    padding: 0;
+    padding: 010px;
+    overflow: scroll;
+    width: 500px;
+    height: 390px;
+    align-items: center;
+    margin: 10px;
 }
 
 #taskList li {
     display: flex;
     align-items: center;
     margin: 10px 0;
-    border: 2px solid rgb(110, 107, 107);
+    border: 2px solid rgb(230, 221, 221);
     border-radius: 10px;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     inline-size: 300px;
-    background-color: rgb(115, 184, 119);
+    background-color: rgb(231, 64, 64);
 
 
 }
@@ -72,29 +82,54 @@ body {
 #taskList li p {
     flex: 1;
     text-align: left;
+    color: rgb(241, 241, 221);
 }
 
 /* Estilos de los botones de la lista */
 li button{
     cursor: pointer;
-   padding: 5px;
-   
+    padding: 0;
+    margin: 2px;
+    color: rgb(236, 236, 160);
+    border: 2px solid rgb(204, 194, 194);
+
 }
+
+li button.b-edicion{
+font-size: 12px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 2px;
+margin: 2px;
+background-color: rgb(11, 160, 160);
+
+
+}
+
+li button.b-borrado{
+    font-size: 12px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 2px;
+background-color: rgb(250, 8, 8);
+}
+
 
 /* Se agregan los estilos del footer */
 footer {
+    margin-right: 9%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 0px;
+    width: 99%;
+    color: beige;
+    background-color:rgb(231, 64, 64);
 
 }
 
 .f1 {
-    margin: 0px;
+    margin: 1px;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

@@ -16,12 +16,12 @@ function displayTasks(){
 
   const editButton = document.createElement('button');
       editButton.className = 'b-edicion'; //clase editar
-      editButton.textContent = 'Editar Rutina';
+      editButton.textContent = 'Cambiar Rutina';
       editButton.onclick = () => editTask(index);
 
       const deleteButton = document.createElement('button');
       deleteButton.className = 'b-borrado'; // clase eliminar
-      deleteButton.textContent = 'Borrar Rutina';
+      deleteButton.textContent = 'Borrar';
       deleteButton.onclick = () => deleteTask(index);
 
   li.appendChild(editButton);
