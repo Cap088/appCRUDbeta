@@ -1,0 +1,125 @@
+@media (max-width: 500px){
+
+    body{
+        height: auto;
+    }
+
+    /* estilos para el encabezado */
+
+    header{
+        width: 100%;
+        font-size: 10px;
+        margin-top: -15px;
+
+    }
+
+    /* estilos del panel de ingreso */
+
+    .panel{
+        margin: 20px;
+    }
+
+    .panel button{
+        height: 36px;
+        margin: 2px;
+        width: 95px;
+        font-size: 15px;
+        border: 2px solid rgb(230, 221, 221);
+
+    }
+
+    .panel input{
+        height: 30px;
+        font-size: 25px;
+        border-radius: 1px ;
+    }
+
+    .panel input::placeholder{
+        color: rgb(99, 96, 96);
+        font-size: 14px;
+        text-align: center;
+
+    }
+
+    #task{
+        width: 200px;
+        height: 30px;
+        border: 3px solid rgb(99, 96, 96);
+        margin: 1px;
+
+    }
+
+    /* estilos de la lista */
+
+    .recuadro{
+        height: 300%;
+        width: 90%;
+        margin: 40px;
+        margin-top: 10px;
+    
+    }
+
+    #taskList{
+        overflow-y: scroll;
+        height: 490px;
+        width: 80%;
+        align-items: center;
+        margin-left: -40px;
+    
+    }
+
+    #taskList li{
+        font-size: 15px;
+        padding-left: 20px;
+        width: 90%;
+        margin: 8px;
+        align-items: center;
+        padding-top: -550px;
+        border: 3px solid rgb(230, 221, 221);
+    }
+
+    #taskList li p {
+        flex: 1;
+        text-align: left;
+        color: rgb(241, 241, 221);
+        margin: 10px;
+    }
+
+    /* estilos de los botones de la lista */
+
+    li button{
+        border: 2px solid rgb(230, 221, 221);
+    }
+
+    li button.b-edicion{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    li button.b-borrado{
+        font-size: 10px;
+    }
+
+    /* estilos del pie de pagina */
+
+    footer{
+        width: 101%;
+        height: 70px;
+        margin-left: -10px;
+    }
+
+    .f1{
+        font-size: 13px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .f2{
+        font-size: 12px;
+        padding: 0;
+        text-align: center;
+        margin: 3px;
+    }
+
+}
+
