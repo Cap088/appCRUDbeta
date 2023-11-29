@@ -78,7 +78,7 @@ header h1{
 
 #taskList {
     padding: 10px;
-    overflow-block: scroll;
+    overflow-y: scroll;
     width: 500px;
     height: 310px;
     align-items: center;
