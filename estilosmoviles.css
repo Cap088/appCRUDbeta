@@ -8,7 +8,7 @@
 
     header{
         width: 100%;
-        font-size: 10px;
+        font-size: 11px;
         margin-top: -15px;
 
     }
@@ -20,9 +20,9 @@
     }
 
     .panel button{
-        height: 36px;
+        height: 38px;
         margin: 2px;
-        width: 95px;
+        width: 94px;
         font-size: 15px;
         border: 2px solid rgb(230, 221, 221);
 
@@ -30,7 +30,7 @@
 
     .panel input{
         height: 30px;
-        font-size: 25px;
+        font-size: 17px;
         border-radius: 1px ;
     }
 
